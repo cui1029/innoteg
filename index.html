@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>实验设备</title>
+		<!-- 
+			内容宽度=屏幕宽度	缩放比例为1 	缩放的最大比例		是否允许用户缩放
+		 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!--  是否允许打电话和发送Email文件  -->
+		<meta content="telephone=no,email=no" name="format-detection"  />
+		<!--  渲染IE最新版本 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script> 
+		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<style type="text/css">
+			canvas{
+			  display:block;
+			  vertical-align:bottom;
+			}
+			
+			
+			/* ---- stats.js ---- */
+			
+			.count-particles{
+			  /* background: #000022; */
+			  position: absolute;
+			  top: 48px;
+			  left: 0;
+			  width: 80px;
+			  color: #13E8E9;
+			  font-size: .8em;
+			  text-align: left;
+			  text-indent: 4px;
+			  line-height: 14px;
+			  padding-bottom: 2px;
+			  font-family: Helvetica, Arial, sans-serif;
+			  font-weight: bold;
+			}
+			
+			.js-count-particles{
+			  font-size: 1.1em;
+			}
+			
+			#stats,
+			.count-particles{
+			  -webkit-user-select: none;
+			  margin-top: 5px;
+			  margin-left: 5px;
+			}
+			
+			#stats{
+			  border-radius: 3px 3px 0 0;
+			  overflow: hidden;
+			}
+			
+			.count-particles{
+			  border-radius: 0 0 3px 3px;
+			}
+			
+			
+			/* ---- particles.js container ---- */
+			
+			#particles-js{
+			  width: 100%;
+			  height: 100%;
+			  /* background-color: #b61924; */
+			  background: #fff8f8;
+			  background-image: url('');
+			  background-size: cover;
+			  background-position: 50% 50%;
+			  background-repeat: no-repeat;
+			  position: absolute;
+			  left: 0;
+			  top: 0;
+			  z-index: -1;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 模态框 -->
+		<nav class="modal">
+			<dl>
+				<dt><a href="#">首页</a></dt>
+				<dt><a href="product-center.html">产品中心</a><span class="span">+</span></dt>
+				<dd>
+					<ul class="">
+						<li><a href="product-center.html">仪器分类</a></li>
+						<li><a href="solution.html">解决方案</a></li>
+					</ul>
+				</dd>
+				<dt><a href="about-innoteg.html">关于INNOTEG</a><span class="span">+</span></dt>
+				<dd>
+					<ul class="">
+						<li><a href="#">关于我们</a></li>
+						<li><a href="company-news.html">公司新闻</a></li>
+					</ul>
+				</dd>
+				<dt><a href="after-sale-service.html">售后服务</a></dt>
+				<dt><a href="sign-in.html">登录</a>/<a href="register.html">注册</a></dt>
+				<dt><a href="#">EN</a></dt>
+			</dl>
+		</nav>
+		<header class="header_wrap">
+			<div class="header clearfix">
+				<h1 class="logo"><a href="#"><img src="images/logo.png"></a></h1>
+				<nav class="nav">
+					<ul class="clearfix">
+						<li>
+							<a href="#">首页</a>
+							<em></em>
+						</li>
+						<li>
+							<a href="product-center.html">产品中心</a>
+							<em></em>
+							<div class="sec_nav">
+								<div class="sec_nav_top">
+									<a href="product-center.html" id="yiqi">仪器分类</a><a href="solution.html" id="jiejue">解决方案</a>
+								</div>
+								<div class="sec_nav_bottom yqi clearfix">
+									<p>
+										<a href="#">实验室通用设备</a>
+										<a href="#">氢气发生器</a>
+										<a href="#">氮气发生器</a>
+										<a href="#">旋转蒸发仪</a>
+										<a href="#">磁力搅拌器</a>
+										<a href="#">顶置搅拌器</a>
+										<a href="#">移液器</a>
+										<a href="#">加热制冷恒温仪</a>
+									</p>
+									<p>
+										<a href="#">前处理设备</a>
+										<a href="#">自动进样器</a>
+										<a href="#">采样设置</a>
+										<a href="#">固相微萃取装置</a>
+										<a href="#">微波消解仪</a>
+									</p>
+									<p>
+										<a href="#">分析仪器</a>
+										<a href="#">气相色谱仪</a>
+										<a href="#">气质联用仪</a>
+										<a href="#">配件与耗材</a>
+										<a href="#">SPME固相微萃取</a>
+										<a href="#">RBS清洗剂</a>
+									</p>
+								</div>
+								<div class="sec_nav_bottom jjue clearfix">
+									<p><a href="#">食品安全</a></p>
+									<p><a href="#">环境保护</a></p>
+									<p><a href="#">生物制药</a></p>
+									<p><a href="#">生命科学</a></p>
+									<p><a href="#">材料分析</a></p>
+									<p><a href="#">样品前处理</a></p>
+									<p><a href="#">化工</a></p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="about-innoteg.html">关于INNOTEG</a>
+							<em></em>
+							<div class="sec_nav">
+								<div class="sec_nav_top" id="sec_innoteg">
+									<a href="#">关于我们</a><a href="company-news.html">公司新闻</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="after-sale-service.html">售后服务</a>
+							<em></em>
+						</li>
+					</ul>
+				</nav>
+				<div class="dlzc">
+					<a href="sign-in.html">登录</a>/<a href="register.html">注册</a> |
+					<a href="#">EN</a>
+				</div>
+				<!-- 移动端 -->
+				<div class="menu" id="menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</header>
+		<!-- 轮播图 -->
+		<!-- Swiper -->
+		<div class="swiper-container swiper1">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="images/banner_1.jpg">
+					<div class="boni">
+						<h2 class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s"
+							swiper-animate-delay="0.8s">多种型号可选</h2>
+						<p class="ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1s"
+							swiper-animate-delay="0.5s">显示促销中</p>
+						<p class="ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s"
+							swiper-animate-delay="1s"><a href=""><span>查看详情</span></a></p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/banner_2.jpg">
+					<div class="boni">
+						<h2 class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s"
+							swiper-animate-delay="0.8s">纯度>99.9996%</h2>
+						<p class="ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1s"
+							swiper-animate-delay="0.5s">极低维护费用</p>
+						<p class="ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s"
+							swiper-animate-delay="1s"><a href=""><span>查看详情</span></a></p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/banner_3.jpg">
+					<div class="boni">
+						<h2 class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s"
+							swiper-animate-delay="0.8s">INNOTEG免费延保服务</h2>
+						<p class="ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1s"
+							swiper-animate-delay="0.5s">品质延续，使用无忧</p>
+						<p class="ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s"
+							swiper-animate-delay="1s"><a href=""><span>查看详情</span></a></p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/banner_4.jpg">
+					<div class="boni">
+						<h2 class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s"
+							swiper-animate-delay="0.8s">融合光纤测温系统和全罐压力扫描监控系统</h2>
+						<p class="ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1s"
+							swiper-animate-delay="0.5s">3个月起租</p>
+						<p class="ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s"
+							swiper-animate-delay="1s"><a href=""><span>查看详情</span></a></p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/banner_5.jpg">
+					<div class="boni">
+						<h2 class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s"
+							swiper-animate-delay="0.8s">磁搅 | 顶搅 | 移液器 | 制冷循环器</h2>
+						<p class="ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1s"
+							swiper-animate-delay="0.5s">助力开学，免费试用</p>
+						<p class="ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s"
+							swiper-animate-delay="1s"><a href=""><span>查看详情</span></a></p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/banner_6.jpg">
+					<div class="boni">
+						<h2 class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s"
+							swiper-animate-delay="0.8s">无溶剂萃取的绿色环保技术</h2>
+						<p class="ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1s"
+							swiper-animate-delay="0.5s">效率和灵敏度的完美兼顾</p>
+						<p class="ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s"
+							swiper-animate-delay="1s"><a href=""><span>查看详情</span></a></p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/banner_7.jpg">
+					<div class="boni">
+						<h2 class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s"
+							swiper-animate-delay="0.8s">德国进口，整支灭菌</h2>
+						<p class="ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1s"
+							swiper-animate-delay="0.5s">限时免费使用，速速申请</p>
+						<p class="ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s"
+							swiper-animate-delay="1s"><a href=""><span>查看详情</span></a></p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/banner_8.jpg">
+					<div class="boni">
+						<h2 class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s"
+							swiper-animate-delay="0.8s">权威检测认证，复学安心之选</h2>
+						<p class="ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1s"
+							swiper-animate-delay="0.5s">守卫健康，共克时艰</p>
+						<p class="ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s"
+							swiper-animate-delay="1s"><a href=""><span>查看详情</span></a></p>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+
+		<!-- hot -->
+		<section class="hot_wrap">
+			<div class="hot clearfix">
+				<span>
+					<em>HOT<i>热门搜索:</i></em>
+					<a href="#">自动进样器</a>
+					<a href="#">旋转蒸发仪</a>
+					<a href="#">移液器</a>
+					<a href="#">微波消解仪</a>
+					<a href="#">气象色谱仪</a>
+				</span>
+				<form action="" method="post">
+					<font>
+						<input type="text" placeholder="搜索..." />
+						<input type="image" src="images/search.png" />
+					</font>
+				</form>
+			</div>
+		</section>
+		<!-- product -->
+		<section class="product_wrap">
+			<div class="product clearfix">
+				<div class="series">
+					<div class="series_t">
+						产品系列
+					</div>
+					<!--  -->
+					<div class="pro-center">
+						<div class="pro-content">
+							<div class="pro-left">
+								<!--分类，on状态为当前高亮-->
+								<div class="left-category">
+									<ul class="clearfix">
+										<li class="on"><a href="#">实验室通用设备</a></li>
+										<li><a href="#">前处理设备</a></li>
+										<li><a href="#">分析仪器</a></li>
+										<li><a href="#">配件及耗材</a></li>
+									</ul>
+								</div>
+							</div>
+							<!--对应分类的内容，active状态为显示-->
+							<div class="pro-right active">
+								<ul>
+									<li>
+										<div class="img">
+											<img src="images/equipment_1.png">
+										</div>
+										<div class="item-text">
+											<h2>实验室通用设备</h2>
+											<p>
+												<a href="#">
+													<span>了解详情</span>
+												</a>
+											</p>
+											<p>
+												<a href="#">
+													<span>相关应用</span>
+												</a>
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="pro-right">
+								<ul>
+									<li>
+										<div class="img">
+											<img src="images/equipment_2.png">
+										</div>
+										<div class="item-text">
+											<h2>前处理设备</h2>
+											<p>
+												<a href="#">
+													<span>了解详情</span>
+												</a>
+											</p>
+											<p>
+												<a href="#">
+													<span>相关应用</span>
+												</a>
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="pro-right">
+								<ul>
+									<li>
+										<div class="img">
+											<img src="images/equipment_3.png">
+										</div>
+										<div class="item-text">
+											<h2>分析仪器</h2>
+											<p>
+												<a href="#">
+													<span>了解详情</span>
+												</a>
+											</p>
+											<p>
+												<a href="#">
+													<span>相关应用</span>
+												</a>
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="pro-right">
+								<ul>
+									<li>
+										<div class="img">
+											<img src="images/equipment_4.png">
+										</div>
+										<div class="item-text">
+											<h2>配件及耗材</h2>
+											<p>
+												<a href="#">
+													<span>了解详情</span>
+												</a>
+											</p>
+											<p>
+												<a href="#">
+													<span>相关应用</span>
+												</a>
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product_bg">
+					<img src="images/equipment_5.png">
+				</div>
+			</div>
+		</section>
+		<!-- innoteg -->
+		<section class="innoteg_wrap">
+			<div class="innoteg">
+				<div class="innoteg_t">
+					<h2>关于INNOTEG</h2>
+					<p>英诺得(INNOTEG)是一家专业从科学仪器设备研发生产的高科技企业，是集实验室设备研发生产、方法开发、仪器销售和技术服务为一体的专业企业。</p>
+				</div>
+				<div class="innoteg_b">
+					<div class="swiper-container swiper2">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="swiper2_img">
+									<img src="images/innoteg1.jpg">
+								</div>
+								<div class="swiper2_text">
+									<h2>我们的目标</h2>
+									<p>我们的目标是不断研发出能够帮助客户提高工作效率的自动化设备，同时提供更多产品及一站式的解决方案。</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper2_img">
+									<img src="images/innoteg2.jpg">
+								</div>
+								<div class="swiper2_text">
+									<h2>服务能力</h2>
+									<p>24小时内响应您的售后及技术需求 / 72小时内提供急速上门服务 / 4个工作日完成设备日常维护</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+				</div>
+			</div>
+			<!--  -->
+			<!-- count particles -->
+			<div class="count-particles">
+				<span class="js-count-particles">--</span> particles
+			</div>
+
+			<!-- particles.js container -->
+			<div id="particles-js"></div>
+			<!--  -->
+		</section>
+		<!-- 支持团队 -->
+		<section class="support_wrap">
+			<div class="support">
+				<div class="support_t">
+					<h2>支持团队</h2>
+					<p>我们设有4 个区域性维修中心及配件库，公司业务包含仪器生产、研发、维修售后及解决方案提供、样品测试等服务。</p>
+				</div>
+				<div class="support_b">
+					<div class="product-number-info" id="productNumber">
+						<div class="product-number-inner">
+							<ul class="q clearfix">
+								<li class="li-1">
+									<b>
+										<i id="productNumber_1" data-sum="40">0</i>
+										<sup>+</sup>
+									</b>
+									<p>维修工程师</p>
+								</li>
+								<li class="li-2">
+									<b>
+										<i id="productNumber_2" data-sum="20">0</i>
+										<sup>+</sup>
+									</b>
+									<p>办事处</p>
+								</li>
+								<li class="li-3">
+									<b>
+										<i id="productNumber_3" data-sum="100">0</i>
+										<sup>+</sup>
+									</b>
+									<p>销售人员</p>
+								</li>
+								<li class="li-4">
+									<b>
+										<i id="productNumber_4" data-sum="500">0</i>
+										<sup>+</sup>
+									</b>
+									<p>合作经销商</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="support_dt">
+					<div class="ditu">
+						<img src="images/dt.png">
+					</div>
+					<div class="lxwmb">
+						<h2>总部·广州</h2>
+						<p><a href="#"><span>联系我们</span></a></p>
+					</div>
+					<div class="mp mp1">
+						<div class="feng">
+							<div class="boou">
+								<h3>总部 • 广州</h3>
+								<p><em>Add: </em>广东省广州市黄埔区茅岗南路88号鱼珠智谷E-PARK创意园A08-09</p>
+								<p><em>Tel: </em>020-3256 8788</p>
+								<p><em>Fax: </em>020-3256 8700</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="foot_t">
+			<div class="foot">
+				<p>匠心质造是英诺德人的初心，更是贯穿始终对品质的坚持。</p>
+				<p>目前公司已通过ISO 9001认证，对产品负责就是对客户最大的保障。</p>
+			</div>
+		</section>
+
+
+		<!-- footer -->
+		<footer class="footer_wrap">
+			<div class="footer">
+				<div class="footer_top clearfix">
+					<div class="sqzx">
+						<dl>
+							<dt><img src="images/footer_sqzx.png"></dt>
+							<dd>
+								<h3>售前咨询</h3>
+								<p>400-006-9696</p>
+							</dd>
+						</dl>
+						<dl>
+							<dt><img src="images/footerr_sqzx.png"></dt>
+							<dd>
+								<h3>维修专线</h3>
+								<p>020-32568787</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="gzwm">
+						<dl>
+							<dt><img src="images/footer_vx.png"></dt>
+							<dd>关注我们</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="footer_bottom">
+					<p class="p_nav">
+						<span>
+							<a href="#">微波消解仪</a>|
+							<a href="#">气相色谱仪</a>|
+							<a href="#">加热制冷恒温器</a>|
+							<a href="#">磁力搅拌器</a>|
+							<a href="#">旋转蒸发仪</a>|
+							<a href="#">顶置搅拌器</a>|
+							<a href="#">气质联用仪</a>
+						</span>
+					</p>
+					<p class="p_jsly clearfix">
+						<span>Copyright © 英诺德（广州）科学有限公司 版权所有<a href="#">沪ICP备09052757号-9</a></span>
+						<span>技术支持: <a href="#">原创先锋</a></span>
+					</p>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+</html>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/menu_btn.js"></script>
+<script src="js/sec_nav.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/series.js"></script>
+<script src="js/swiper.animate1.0.3.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+<script type="text/javascript">
+	var swiper = new Swiper('.swiper1', {
+		spaceBetween: 30,
+		loop: true,
+		centeredSlides: true,
+		autoplay: {
+			delay: 4000,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+
+
+		on: {
+			init: function() {
+				swiperAnimateCache(this); //隐藏动画元素 
+				swiperAnimate(this); //初始化完成开始动画
+			},
+			slideChangeTransitionEnd: function() {
+				swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+				//this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); 动画只展现一次，去除ani类名
+			}
+		}
+	});
+	var swiper = new Swiper('.swiper2', {
+		spaceBetween: 30,
+		loop: true,
+		centeredSlides: true,
+		autoplay: {
+			delay: 4000,
+			disableOnInteraction: false,
+		},
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+
+
+		on: {
+			init: function() {
+				swiperAnimateCache(this); //隐藏动画元素 
+				swiperAnimate(this); //初始化完成开始动画
+			},
+			slideChangeTransitionEnd: function() {
+				swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+				//this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); 动画只展现一次，去除ani类名
+			}
+		}
+	});
+</script>
