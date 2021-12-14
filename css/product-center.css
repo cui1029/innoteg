@@ -1,0 +1,1434 @@
+.banner_wrap {
+	position: relative;
+}
+
+.banner_wrap img {
+	display: block;
+	width: 100%;
+}
+
+.banner {
+	width: 1110px;
+	margin: 0 auto;
+}
+
+.banner_text {
+	position: absolute;
+	top: 25%;
+}
+
+.banner_text h2 {
+	font-size: 40px;
+	line-height: 70px;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.banner_text p {
+	font-size: 16px;
+	line-height: 30px;
+	color: #ffffff;
+}
+
+/* main */
+.main {
+	width: 1110px;
+	margin: 0 auto;
+
+}
+
+.main_nav {
+	width: 100%;
+	margin-top: 50px;
+	border-bottom: 1px solid #c2c2c2;
+}
+
+.main_nav ul {
+	width: 100%;
+	text-align: center;
+}
+
+.main_nav ul li {
+	display: inline-block;
+	margin-right: 60px;
+}
+
+.main_nav ul li:last-of-type {
+	margin-right: 0;
+}
+
+.main_nav ul li a {
+	display: block;
+	font-size: 20px;
+	line-height: 70px;
+	color: #333;
+	padding: 0px 17px;
+	position: relative;
+}
+.main_nav ul li:first-of-type a{
+	color: #027ad0;
+}
+.main_nav ul li:first-of-type a::after {
+	content: '';
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 3px;
+	background: #027ad0;
+	z-index: 999;
+}
+
+.main_nav ul li:hover a::after {
+	content: '';
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 3px;
+	background: #027ad0;
+	z-index: 999;
+}
+
+.main_nav ul li:hover a {
+	color: #027ad0;
+}
+
+.main_content {
+	margin-bottom: 80px;
+}
+
+.main_content {
+	width: 100%;
+}
+
+.main_cp {
+	margin-top: 80px;
+	width: 100%;
+	position: relative;
+}
+
+.main_cp>h2 {
+	width: 130px;
+	height: 130px;
+	background: url(../images/equipment_5.png) no-repeat right top;
+	position: absolute;
+	top: -10px;
+	right: -90px;
+	z-index: 999;
+}
+
+.main_cp dl {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+
+.main_cp dl dt {
+	float: right;
+	width: 53%;
+	margin-top: 78px;
+}
+
+.main_cp dl dt img {
+	width: 100%;
+	transition: all 1s ease;
+}
+
+.main_cp dl dt:hover img {
+	transform: scale(1.1)
+}
+
+.main_cp dl dd {
+	float: left;
+	width: 40%;
+}
+
+.main_cp dl dd>h3 {
+	font-size: 30px;
+	line-height: 30px;
+	color: #454545;
+	padding-top: 50px;
+	position: relative;
+	padding-bottom: 40px;
+}
+
+.main_cp dl dd>h3::after {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0%;
+	width: 40px;
+	height: 5px;
+	background: #027ad0;
+	z-index: 999;
+}
+
+.main_cp dl dd p {
+	font-size: 14px;
+	line-height: 28px;
+	color: #454545;
+	height: 84px;
+	overflow: hidden;
+}
+.main_cp .scrollbox {
+	width: 55%;
+	position: absolute;
+	left: 0;
+	bottom: 20px;
+	overflow: hidden;
+}
+
+.main_cp .scrollDiv {
+	width: 100%;
+	height: 160px;
+	overflow: hidden;
+}
+
+/*这里的高度和超出隐藏是必须的*/
+.main_cp #scrollDiv li {
+	height: 60px;
+	line-height: 60px;
+}
+
+.main_cp #scrollDiv li a h3 {
+	width: calc(100% - 90px);
+	height: auto;
+	position: relative;
+	transition: 800ms ease all;
+	z-index: 999;
+	cursor: pointer;
+	/* padding: 13px 30px; */
+	border: 2px solid transparent;
+	padding: 13px 30px 43px 30px;
+}
+
+.main_cp #scrollDiv li a h3 span {
+	float: left;
+	font-size: 18px;
+	line-height: 28px;
+	color: #2b2b2b;
+	font-weight: bold;
+}
+
+.main_cp #scrollDiv li a h3 em {
+	display: none;
+	float: right;
+	font-size: 18px;
+	line-height: 28px;
+	color: #333;
+	font-weight: bold;
+}
+
+.main_cp #scrollDiv li a h3::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+	height: 0px;
+	transform: translate(0, -50%);
+}
+.main_cp #scrollDiv li a h3:hover span{
+	color: #027AD0;
+}
+
+.main_cp #scrollDiv li a h3:hover::after {
+	height: 100%;
+	transition: 800ms ease all;
+	border: 2px solid #027ad0;
+}
+.main_cp #scrollDiv li a h3:hover em{
+	display: block;
+}
+
+
+.main_cp .scroltit {
+	width: 100%;
+	height: 50px;
+	position: relative;
+}
+.main_cp #but_up{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 60px;
+	background: url(../images/textlb1.png) no-repeat 0 0;
+}
+
+.main_cp #but_down{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 0;
+	background: url(../images/textlb2.png) no-repeat 0 0;
+}
+
+.main_cp1{
+	width: 100%;
+	margin-top: 80px;
+	position: relative;
+}
+.main_cp1 h2{
+	width: 130px;
+	height: 130px;
+	background: url(../images/equipment_6.png) no-repeat right top;
+	position: absolute;
+	top: -10px;
+	left: -90px;
+	z-index: 111;
+}
+.main_cp1 dl{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+.main_cp1 dl dt{
+	float: left;
+	width: 53%;
+	margin-top: 78px;
+}
+.main_cp1 dl dt img{
+	width: 100%;
+	transition: all 1s ease;
+}
+.main_cp1 dl dt:hover img{
+	transform: scale(1.1);
+}
+.main_cp1 dl dd{
+	float: right;
+	width: 40%;
+}
+.main_cp1 dl dd h3{
+	font-size: 30px;
+	line-height: 30px;
+	color: #454545;
+	padding-top: 50px;
+	position: relative;
+	padding-bottom: 40px;
+	text-align: right;
+}
+.main_cp1 dl dd>h3::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 5px;
+	background: #027AD0;
+	z-index: 111;
+}
+.main_cp1 dl dd p{
+	font-size: 14px;
+	line-height: 28px;
+	color: #454545;
+	height: 84px;
+	overflow: hidden;
+	text-align: right;
+}
+.main_cp1 .scrollbox{
+	width: 55%;
+	position: absolute;
+	right: 0;
+	bottom: 20px;
+	overflow: hidden;
+}
+.main_cp1 #scrollDiv1{
+	width: 100%;
+	overflow: hidden;
+	height: 60px;
+	margin-bottom: 60px;
+}
+/*这里的高度和超出隐藏是必须的*/
+.main_cp1 #scrollDiv1 li {
+	height: 60px;
+	line-height: 60px;
+	z-index: 111;
+}
+
+.main_cp1 #scrollDiv1 li a h3 {
+	width: calc(100% - 90px);
+	height: auto;
+	position: relative;
+	z-index: 999;
+	cursor: pointer;
+	border: 2px solid transparent;
+	padding: 13px 30px 43px 30px;
+	background: transparent;
+	transition: 800ms ease all;
+}
+
+.main_cp1 #scrollDiv1 li a h3 span {
+	float: right;
+	font-size: 18px;
+	line-height: 28px;
+	color: #2b2b2b;
+	font-weight: bold;
+}
+
+.main_cp1 #scrollDiv1 li a h3 em {
+	display: none;
+	float: left;
+	font-size: 18px;
+	line-height: 28px;
+	color: #333;
+	font-weight: bold;
+}
+
+.main_cp1 #scrollDiv1 li a h3::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+	height: 0px;
+	transform: translate(0, -50%);
+}
+.main_cp1 #scrollDiv1 li a h3:hover span{
+	color: #027AD0;
+}
+
+.main_cp1 #scrollDiv1 li a h3:hover::after {
+	height: 100%;
+	transition: 500ms ease all;
+	border: 2px solid #027ad0;
+	background: transparent;
+}
+.main_cp1 #scrollDiv1 li a h3:hover em{
+	display: block;
+}
+
+
+.main_cp1 .scroltit {
+	width: 100%;
+	height: 50px;
+	position: relative;
+}
+.main_cp1 #but_up1{
+	cursor: pointer;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 0px;
+	background: url(../images/textlb1.png) no-repeat 0 0;
+}
+.main_cp1 #but_down1{
+	cursor: pointer;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 60px;
+	background: url(../images/textlb2.png) no-repeat 0 0;
+}
+/*  */
+.main_cp2 {
+	margin-top: 80px;
+	width: 100%;
+	position: relative;
+}
+
+.main_cp2>h2 {
+	width: 130px;
+	height: 130px;
+	background: url(../images/equipment_5.png) no-repeat right top;
+	position: absolute;
+	top: -10px;
+	right: -90px;
+	z-index: 999;
+}
+
+.main_cp2 dl {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+
+.main_cp2 dl dt {
+	float: right;
+	width: 53%;
+	margin-top: 78px;
+}
+
+.main_cp2 dl dt img {
+	width: 100%;
+	transition: all 1s ease;
+}
+
+.main_cp2 dl dt:hover img {
+	transform: scale(1.1)
+}
+
+.main_cp2 dl dd {
+	float: left;
+	width: 40%;
+}
+
+.main_cp2 dl dd>h3 {
+	font-size: 30px;
+	line-height: 30px;
+	color: #454545;
+	padding-top: 50px;
+	position: relative;
+	padding-bottom: 40px;
+}
+
+.main_cp2 dl dd>h3::after {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0%;
+	width: 40px;
+	height: 5px;
+	background: #027ad0;
+	z-index: 999;
+}
+
+.main_cp2 dl dd p {
+	font-size: 14px;
+	line-height: 28px;
+	color: #454545;
+	height: 84px;
+	overflow: hidden;
+}
+.main_cp2 .scrollbox {
+	width: 55%;
+	position: absolute;
+	left: 0;
+	bottom: 20px;
+	overflow: hidden;
+}
+
+.main_cp2 .scrollDiv {
+	width: 100%;
+	height: 160px;
+	overflow: hidden;
+}
+
+/*这里的高度和超出隐藏是必须的*/
+.main_cp2 #scrollDiv2 li {
+	height: 60px;
+	line-height: 60px;
+}
+
+.main_cp2 #scrollDiv2 li a h3 {
+	width: calc(100% - 90px);
+	height: auto;
+	position: relative;
+	transition: 800ms ease all;
+	z-index: 999;
+	cursor: pointer;
+	/* padding: 13px 30px; */
+	border: 2px solid transparent;
+	padding: 13px 30px 43px 30px;
+}
+
+.main_cp2 #scrollDiv2 li a h3 span {
+	float: left;
+	font-size: 18px;
+	line-height: 28px;
+	color: #2b2b2b;
+	font-weight: bold;
+}
+
+.main_cp2 #scrollDiv2 li a h3 em {
+	display: none;
+	float: right;
+	font-size: 18px;
+	line-height: 28px;
+	color: #333;
+	font-weight: bold;
+}
+
+.main_cp2 #scrollDiv2 li a h3::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+	height: 0px;
+	transform: translate(0, -50%);
+}
+.main_cp2 #scrollDiv2 li a h3:hover span{
+	color: #027AD0;
+}
+
+.main_cp2 #scrollDiv2 li a h3:hover::after {
+	height: 100%;
+	transition: 800ms ease all;
+	border: 2px solid #027ad0;
+}
+.main_cp2 #scrollDiv2 li a h3:hover em{
+	display: block;
+}
+
+
+.main_cp2 .scroltit {
+	width: 100%;
+	height: 50px;
+	position: relative;
+}
+.main_cp2 #but_up2{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 60px;
+	background: url(../images/textlb1.png) no-repeat 0 0;
+}
+
+.main_cp2 #but_down2{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 0;
+	background: url(../images/textlb2.png) no-repeat 0 0;
+}
+/* 3 */
+.main_cp3{
+	width: 100%;
+	margin-top: 80px;
+	position: relative;
+}
+.main_cp3 h2{
+	width: 130px;
+	height: 130px;
+	background: url(../images/equipment_6.png) no-repeat right top;
+	position: absolute;
+	top: -10px;
+	left: -90px;
+	z-index: 111;
+}
+.main_cp3 dl{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+.main_cp3 dl dt{
+	float: left;
+	width: 53%;
+	margin-top: 78px;
+}
+.main_cp3 dl dt img{
+	width: 100%;
+	transition: all 1s ease;
+}
+.main_cp3 dl dt:hover img{
+	transform: scale(1.1);
+}
+.main_cp3 dl dd{
+	float: right;
+	width: 40%;
+}
+.main_cp3 dl dd h3{
+	font-size: 30px;
+	line-height: 30px;
+	color: #454545;
+	padding-top: 50px;
+	position: relative;
+	padding-bottom: 40px;
+	text-align: right;
+}
+.main_cp3 dl dd>h3::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 5px;
+	background: #027AD0;
+	z-index: 111;
+}
+.main_cp3 dl dd p{
+	font-size: 14px;
+	line-height: 28px;
+	color: #454545;
+	height: 84px;
+	overflow: hidden;
+	text-align: right;
+}
+.main_cp3 .scrollbox{
+	width: 55%;
+	position: absolute;
+	right: 0;
+	bottom: 20px;
+	overflow: hidden;
+}
+.main_cp3 #scrollDiv3{
+	width: 100%;
+	overflow: hidden;
+	height: 120px;
+	margin-bottom: 20px;
+}
+/*这里的高度和超出隐藏是必须的*/
+.main_cp3 #scrollDiv3 li {
+	height: 60px;
+	line-height: 60px;
+	z-index: 111;
+}
+
+.main_cp3 #scrollDiv3 li a h3 {
+	width: calc(100% - 90px);
+	height: auto;
+	position: relative;
+	z-index: 999;
+	cursor: pointer;
+	border: 2px solid transparent;
+	padding: 13px 30px 43px 30px;
+	background: transparent;
+	transition: 800ms ease all;
+}
+
+.main_cp3 #scrollDiv3 li a h3 span {
+	float: right;
+	font-size: 18px;
+	line-height: 28px;
+	color: #2b2b2b;
+	font-weight: bold;
+}
+
+.main_cp3 #scrollDiv3 li a h3 em {
+	display: none;
+	float: left;
+	font-size: 18px;
+	line-height: 28px;
+	color: #333;
+	font-weight: bold;
+}
+
+.main_cp3 #scrollDiv3 li a h3::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+	height: 0px;
+	transform: translate(0, -50%);
+}
+.main_cp3 #scrollDiv3 li a h3:hover span{
+	color: #027AD0;
+}
+
+.main_cp3 #scrollDiv3 li a h3:hover::after {
+	height: 100%;
+	transition: 500ms ease all;
+	border: 2px solid #027ad0;
+	background: transparent;
+}
+.main_cp3 #scrollDiv3 li a h3:hover em{
+	display: block;
+}
+
+
+.main_cp3 .scroltit {
+	width: 100%;
+	height: 50px;
+	position: relative;
+}
+.main_cp3 #but_up3{
+	cursor: pointer;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 0px;
+	background: url(../images/textlb1.png) no-repeat 0 0;
+}
+.main_cp3 #but_down3{
+	cursor: pointer;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 60px;
+	background: url(../images/textlb2.png) no-repeat 0 0;
+}
+/* 4 */
+.main_cp4 {
+	margin-top: 80px;
+	width: 100%;
+	position: relative;
+}
+
+.main_cp4>h2 {
+	width: 130px;
+	height: 130px;
+	background: url(../images/equipment_5.png) no-repeat right top;
+	position: absolute;
+	top: -10px;
+	right: -90px;
+	z-index: 999;
+}
+
+.main_cp4 dl {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+
+.main_cp4 dl dt {
+	float: right;
+	width: 53%;
+	margin-top: 78px;
+}
+
+.main_cp4 dl dt img {
+	width: 100%;
+	transition: all 1s ease;
+}
+
+.main_cp4 dl dt:hover img {
+	transform: scale(1.1)
+}
+
+.main_cp4 dl dd {
+	float: left;
+	width: 40%;
+}
+
+.main_cp4 dl dd>h3 {
+	font-size: 30px;
+	line-height: 30px;
+	color: #454545;
+	padding-top: 50px;
+	position: relative;
+	padding-bottom: 40px;
+}
+
+.main_cp4 dl dd>h3::after {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0%;
+	width: 40px;
+	height: 5px;
+	background: #027ad0;
+	z-index: 999;
+}
+
+.main_cp4 dl dd p {
+	font-size: 14px;
+	line-height: 28px;
+	color: #454545;
+	height: 84px;
+	overflow: hidden;
+}
+.main_cp4 .scrollbox {
+	width: 55%;
+	position: absolute;
+	left: 0;
+	bottom: 20px;
+	overflow: hidden;
+}
+
+.main_cp4 .scrollDiv {
+	width: 100%;
+	height: 160px;
+	overflow: hidden;
+}
+
+/*这里的高度和超出隐藏是必须的*/
+.main_cp4 #scrollDiv4 li {
+	height: 60px;
+	line-height: 60px;
+}
+
+.main_cp4 #scrollDiv4 li a h3 {
+	width: calc(100% - 90px);
+	height: auto;
+	position: relative;
+	transition: 800ms ease all;
+	z-index: 999;
+	cursor: pointer;
+	/* padding: 13px 30px; */
+	border: 2px solid transparent;
+	padding: 13px 30px 43px 30px;
+}
+
+.main_cp4 #scrollDiv4 li a h3 span {
+	float: left;
+	font-size: 18px;
+	line-height: 28px;
+	color: #2b2b2b;
+	font-weight: bold;
+}
+
+.main_cp4 #scrollDiv4 li a h3 em {
+	display: none;
+	float: right;
+	font-size: 18px;
+	line-height: 28px;
+	color: #333;
+	font-weight: bold;
+}
+
+.main_cp4 #scrollDiv4 li a h3::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+	height: 0px;
+	transform: translate(0, -50%);
+}
+.main_cp4 #scrollDiv4 li a h3:hover span{
+	color: #027AD0;
+}
+
+.main_cp4 #scrollDiv4 li a h3:hover::after {
+	height: 100%;
+	transition: 800ms ease all;
+	border: 2px solid #027ad0;
+}
+.main_cp4 #scrollDiv4 li a h3:hover em{
+	display: block;
+}
+
+
+.main_cp4 .scroltit {
+	width: 100%;
+	height: 50px;
+	position: relative;
+}
+.main_cp4 #but_up4{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 60px;
+	background: url(../images/textlb1.png) no-repeat 0 0;
+}
+
+.main_cp4 #but_down4{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 0;
+	background: url(../images/textlb2.png) no-repeat 0 0;
+}
+/* 3 */
+.main_cp5{
+	width: 100%;
+	margin-top: 80px;
+	position: relative;
+}
+.main_cp5 h2{
+	width: 130px;
+	height: 130px;
+	background: url(../images/equipment_6.png) no-repeat right top;
+	position: absolute;
+	top: -10px;
+	left: -90px;
+	z-index: 111;
+}
+..main_cp5 dl{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+.main_cp5 dl dt{
+	float: left;
+	width: 53%;
+	margin-top: 78px;
+}
+.main_cp5 dl dt img{
+	width: 100%;
+	transition: all 1s ease;
+}
+.main_cp5 dl dt:hover img{
+	transform: scale(1.1);
+}
+.main_cp5 dl dd{
+	float: right;
+	width: 40%;
+}
+.main_cp5 dl dd h3{
+	font-size: 30px;
+	line-height: 30px;
+	color: #454545;
+	padding-top: 50px;
+	position: relative;
+	padding-bottom: 40px;
+	text-align: right;
+}
+.main_cp5 dl dd>h3::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 5px;
+	background: #027AD0;
+	z-index: 111;
+}
+.main_cp5 dl dd p{
+	font-size: 14px;
+	line-height: 28px;
+	color: #454545;
+	height: 84px;
+	overflow: hidden;
+	text-align: right;
+}
+.main_cp5 .scrollbox{
+	width: 55%;
+	position: absolute;
+	right: 0;
+	bottom: 20px;
+	overflow: hidden;
+}
+.main_cp5 #scrollDiv5{
+	width: 100%;
+	overflow: hidden;
+	height: 120px;
+	margin-bottom: 20px;
+}
+/*这里的高度和超出隐藏是必须的*/
+.main_cp5 #scrollDiv5 li {
+	height: 60px;
+	line-height: 60px;
+	z-index: 111;
+}
+
+.main_cp5 #scrollDiv5 li a h3 {
+	width: calc(100% - 90px);
+	height: auto;
+	position: relative;
+	z-index: 999;
+	cursor: pointer;
+	border: 2px solid transparent;
+	padding: 13px 30px 43px 30px;
+	background: transparent;
+	transition: 800ms ease all;
+}
+
+.main_cp5 #scrollDiv5 li a h3 span {
+	float: right;
+	font-size: 18px;
+	line-height: 28px;
+	color: #2b2b2b;
+	font-weight: bold;
+}
+
+.main_cp5 #scrollDiv5 li a h3 em {
+	display: none;
+	float: left;
+	font-size: 18px;
+	line-height: 28px;
+	color: #333;
+	font-weight: bold;
+}
+
+.main_cp5 #scrollDiv5 li a h3::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+	height: 0px;
+	transform: translate(0, -50%);
+}
+.main_cp5 #scrollDiv5 li a h3:hover span{
+	color: #027AD0;
+}
+
+.main_cp5 #scrollDiv5 li a h3:hover::after {
+	height: 100%;
+	transition: 500ms ease all;
+	border: 2px solid #027ad0;
+	background: transparent;
+}
+..main_cp5 #scrollDiv5 li a h3:hover em{
+	display: block;
+}
+
+
+.main_cp5 .scroltit {
+	width: 100%;
+	height: 50px;
+	position: relative;
+}
+.main_cp5 #but_up5{
+	cursor: pointer;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 0px;
+	background: url(../images/textlb1.png) no-repeat 0 0;
+}
+.main_cp5 #but_down5{
+	cursor: pointer;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 60px;
+	background: url(../images/textlb2.png) no-repeat 0 0;
+}
+/* 4 */
+.main_cp6 {
+	margin-top: 80px;
+	width: 100%;
+	position: relative;
+}
+
+.main_cp6>h2 {
+	width: 130px;
+	height: 130px;
+	background: url(../images/equipment_5.png) no-repeat right top;
+	position: absolute;
+	top: -10px;
+	right: -90px;
+	z-index: 999;
+}
+
+.main_cp6 dl {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+
+.main_cp6 dl dt {
+	float: right;
+	width: 53%;
+	margin-top: 78px;
+}
+
+.main_cp6 dl dt img {
+	width: 100%;
+	transition: all 1s ease;
+}
+
+.main_cp6 dl dt:hover img {
+	transform: scale(1.1)
+}
+
+.main_cp6 dl dd {
+	float: left;
+	width: 40%;
+}
+
+.main_cp6 dl dd>h3 {
+	font-size: 30px;
+	line-height: 30px;
+	color: #454545;
+	padding-top: 50px;
+	position: relative;
+	padding-bottom: 40px;
+}
+
+.main_cp6 dl dd>h3::after {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0%;
+	width: 40px;
+	height: 5px;
+	background: #027ad0;
+	z-index: 999;
+}
+
+.main_cp6 dl dd p {
+	font-size: 14px;
+	line-height: 28px;
+	color: #454545;
+	height: 84px;
+	overflow: hidden;
+}
+.main_cp6 .scrollbox {
+	width: 55%;
+	position: absolute;
+	left: 0;
+	bottom: 20px;
+	overflow: hidden;
+}
+
+.main_cp6 .scrollDiv {
+	width: 100%;
+	height: 160px;
+	overflow: hidden;
+}
+
+/*这里的高度和超出隐藏是必须的*/
+.main_cp6 #scrollDiv6 li {
+	height: 60px;
+	line-height: 60px;
+}
+
+.main_cp6 #scrollDiv6 li a h3 {
+	width: calc(100% - 90px);
+	height: auto;
+	position: relative;
+	transition: 800ms ease all;
+	z-index: 999;
+	cursor: pointer;
+	/* padding: 13px 30px; */
+	border: 2px solid transparent;
+	padding: 13px 30px 43px 30px;
+}
+
+.main_cp6 #scrollDiv6 li a h3 span {
+	float: left;
+	font-size: 18px;
+	line-height: 28px;
+	color: #2b2b2b;
+	font-weight: bold;
+}
+
+.main_cp6 #scrollDiv6 li a h3 em {
+	display: none;
+	float: right;
+	font-size: 18px;
+	line-height: 28px;
+	color: #333;
+	font-weight: bold;
+}
+
+.main_cp6 #scrollDiv6 li a h3::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+	height: 0px;
+	transform: translate(0, -50%);
+}
+.main_cp6 #scrollDiv6 li a h3:hover span{
+	color: #027AD0;
+}
+
+.main_cp6 #scrollDiv6 li a h3:hover::after {
+	height: 100%;
+	transition: 800ms ease all;
+	border: 2px solid #027ad0;
+}
+.main_cp6 #scrollDiv6 li a h3:hover em{
+	display: block;
+}
+
+
+.main_cp6 .scroltit {
+	width: 100%;
+	height: 50px;
+	position: relative;
+}
+.main_cp6 #but_up6{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 60px;
+	background: url(../images/textlb1.png) no-repeat 0 0;
+}
+
+.main_cp6 #but_down6{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 0;
+	background: url(../images/textlb2.png) no-repeat 0 0;
+}
+#but_up:hover{
+	background: url(../images/textlb4.png) no-repeat 0 0;
+}
+#but_down:hover{
+	background: url(../images/textlb3.png) no-repeat 0 0;
+}
+#but_up1:hover{
+	background: url(../images/textlb4.png) no-repeat 0 0;
+}
+#but_down1:hover{
+	background: url(../images/textlb3.png) no-repeat 0 0;
+}
+#but_up2:hover{
+	background: url(../images/textlb4.png) no-repeat 0 0;
+}
+#but_down2:hover{
+	background: url(../images/textlb3.png) no-repeat 0 0;
+}
+#but_up3:hover{
+	background: url(../images/textlb4.png) no-repeat 0 0;
+}
+#but_down3:hover{
+	background: url(../images/textlb3.png) no-repeat 0 0;
+}
+#but_up4:hover{
+	background: url(../images/textlb4.png) no-repeat 0 0;
+}
+#but_down4:hover{
+	background: url(../images/textlb3.png) no-repeat 0 0;
+}
+#but_up5:hover{
+	background: url(../images/textlb4.png) no-repeat 0 0;
+}
+#but_down5:hover{
+	background: url(../images/textlb3.png) no-repeat 0 0;
+}
+#but_up6:hover{
+	background: url(../images/textlb4.png) no-repeat 0 0;
+}
+#but_down6:hover{
+	background: url(../images/textlb3.png) no-repeat 0 0;
+}
+/*  */
+.foot_t{
+	background: url(../images/bg1.jpg) no-repeat 0 0;
+	text-align: center;
+	padding: 50px 0px;
+	background-size: cover;
+}
+.foot_t p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+}
+@media screen and (max-width:1600px) {
+	.banner_text {
+		position: absolute;
+		top: 25%;
+	}
+}
+@media screen and (max-width:1024px) {
+	.main_nav{
+		margin-top: 15px;
+	}
+	.main_nav ul li a{
+		font-size: 16px;
+	}
+}
+@media screen and (max-width:1280px) {
+	.banner_text h2 {
+		font-size: 30px;
+		line-height: 60px;
+	}
+	.main_cp>h2,
+	.main_cp2>h2,
+	.main_cp4>h2,
+	.main_cp6>h2{
+		width: 120px;
+		height: 120px;
+		right: -80px;
+	}
+	.main_cp1>h2,
+	.main_cp3>h2,
+	.main_cp5>h2{
+		width: 120px;
+		height: 120px;
+		left: -80px;
+	}
+	.main_cp #scrollDiv li a h3 span,
+	.main_cp1 #scrollDiv1 li a h3 span,
+	.main_cp2 #scrollDiv2 li a h3 span,
+	.main_cp3 #scrollDiv3 li a h3 span,
+	.main_cp4 #scrollDiv4 li a h3 span,
+	.main_cp5 #scrollDiv5 li a h3 span,
+	.main_cp6 #scrollDiv6 li a h3 span{
+		font-size: 14px;
+		line-height: 18px;
+	}
+}
+
+@media screen and (max-width:1200px) {
+	.banner_text {
+		position: absolute;
+		top: 25%;
+	}
+}
+
+@media screen and (min-width:1025px) and (max-width:1200px) {
+	/* .banner_text{
+		margin-left: 15px;
+		width: calc(100% - 30px);
+	} */
+	.main{
+		width: calc(86% - 30px);
+		padding: 0 15px;
+		margin: 0 auto;
+		
+	}
+}
+
+@media screen and (min-width:993px) and (max-width:1024px) {
+	.banner_text,
+	.main{
+		padding: 0 15px;
+		width: calc(100% - 30px);
+	}
+	.main_cp>h2,
+	.main_cp1>h2,
+	.main_cp2>h2,
+	.main_cp3>h2,
+	.main_cp4>h2,
+	.main_cp5>h2,
+	.main_cp6>h2{
+		display: none;
+	}
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+	.banner_text,
+	.main{
+		padding: 0 15px;
+		width: calc(100% - 30px);
+	}
+	.main_cp>h2,
+	.main_cp1>h2,
+	.main_cp2>h2,
+	.main_cp3>h2,
+	.main_cp4>h2,
+	.main_cp5>h2,
+	.main_cp6>h2{
+		display: none;
+	}
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+	.banner_text,
+	.main{
+		padding: 0 15px;
+		width: calc(100% - 30px);
+	}
+
+	.banner_text {
+		top: 5%;
+	}
+	.foot_t p {
+	    font-size: 12px;
+	    line-height: 24px;
+	    font-weight: normal;
+	}
+	.main_cp>h2,
+	.main_cp1>h2,
+	.main_cp2>h2,
+	.main_cp3>h2,
+	.main_cp4>h2,
+	.main_cp5>h2,
+	.main_cp6>h2{
+		display: none;
+	}
+	.main_nav ul li{
+		width: 50%;
+		margin-right: 0;
+	}
+}
